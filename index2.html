@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iGuide.com</title>
+    <link rel="stylesheet" href="tailwind.config.js">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="bangladesh/search-bar.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/brands.min.css">
+    <script src="https://kit.fontawesome.com/7c8e995abe.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="bangladesh/value.css">
+    <link rel="stylesheet" href="bangladesh/iGuide.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/7c8e995abe.js" crossorigin="anonymous"></script>
+
+    <style>
+        * {
+            margin: 0px;
+        }
+
+        nav {
+            background-color: rgba(255, 255, 255, 0.192);
+
+        }
+
+
+
+        .my-border {
+            height: 67px;
+            border-left: 7px solid #038309;
+            border-radius: 2px;
+        }
+
+        .card {
+            box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
+            border-radius: 5px;
+            width: 416px;
+        }
+
+        .card img {
+            border-radius: 5px;
+        }
+
+        .card p {
+            color: var(--Gray-50, #787885);
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 700;
+        }
+
+        .card:hover {
+            transform: scale(1.07);
+            transition: 0.1s;
+        }
+
+        .a-1:hover {
+
+            color: #505050;
+        }
+
+
+        .mobile {
+            display: none;
+        }
+
+
+
+        .color {
+            color: black;
+        }
+
+        .bal {
+            background-image: url(images/banner2.jpg);
+            
+            background-size: cover;
+            background-position: center;
+
+            height: 100vh;
+        }
+
+
+
+        @media screen and (max-width:1023px) {
+
+
+            .hide {
+                display: none;
+            }
+
+            .mobile {
+                display: block;
+            }
+
+            .laptop {
+                display: none !important;
+
+            }
+
+
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <nav class="">
+        <div class="h-16 flex justify-between items-center">
+
+            <div class=" ml-3 my-3 flex"><button class="button" data-text="Awesome">
+                    <span class="actual-text flex">&nbsp;<span class="text-[#005009]">i</span>
+                        <div class="text-black">Guide</div>&nbsp;
+                    </span>
+                    <span aria-hidden="true" class="hover-text">&nbsp;iGuide&nbsp;</span>
+                </button>
+            </div>
+
+
+            <form class="form m-3 ">
+
+                <label class="flex items-center" for="search">
+                    <input class="input" type="text" required="" placeholder="Location " id="search">
+                    <div class="fancy-bg"></div>
+                    <div class="search">
+                        <svg viewBox="0 0 24 24" aria-hidden="true"
+                            class="r-14j79pv r-4qtqp9 r-yyyyoo r-1xvli5t r-dnmrzs r-4wgw6l r-f727ji r-bnwqim r-1plcrui r-lrvibr">
+                            <g>
+                                <path
+                                    d="M21.53 20.47l-3.66-3.66C19.195 15.24 20 13.214 20 11c0-4.97-4.03-9-9-9s-9 4.03-9 9 4.03 9 9 9c2.215 0 4.24-.804 5.808-2.13l3.66 3.66c.147.146.34.22.53.22s.385-.073.53-.22c.295-.293.295-.767.002-1.06zM3.5 11c0-4.135 3.365-7.5 7.5-7.5s7.5 3.365 7.5 7.5-3.365 7.5-7.5 7.5-7.5-3.365-7.5-7.5z">
+                                </path>
+                            </g>
+                        </svg>
+                    </div>
+                    <button class="close-btn" type="reset">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd"
+                                d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                                clip-rule="evenodd"></path>
+                        </svg>
+                    </button>
+                </label>
+
+            </form>
+
+
+            <div class="font-bold mr-2 flex items-center">
+
+                <span class="hide">
+                    <a class="m-3 a-1" href="index.html">Home</a>
+                    <a class="m-3 a-1" href="">News</a>
+                    <a class="m-3 a-1" href="">Contact</a>
+                </span>
+                <i class="a-1 m-3 fa-solid fa-user"></i>
+
+                <i class="a-1 m-3 fa-solid fa-bars"></i>
+
+
+
+
+            </div>
+
+        </div>
+
+    </nav>
+
+    <section class="bal pt-4 ">
+
+        <div class=" mb-10 flex justify-center items-center">
+            <h1 class="text-white mt-10 font-bold text-5xl">Select your division</h1>
+
+        </div>
+
+
+
+        <div class="lg:hidden  flex justify-center mb-28 ">
+            <div class="grid grid-cols-1 md:grid-cols-2  lg:gap-36 md:gap-14">
+
+                <a class="card mb-24 md:mb-0 p-4  " href="dhaka.html">
+                    <img class="w-96 md:w-80 lg:w-96 h-56" src="images/dhaka (2).jpg" alt="">
+                    <h2 class="font-bold text-5xl mb-4">Dhaka</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis, maxime quos delectus quia
+                        iste reprehenderit!</p>
+                </a>
+
+                <a class="card p-4 mb-24 md:mb-0" href="">
+                    <img class="w-96 md:w-80 lg:w-96 h-56" src="images/ranpur.jpg" alt="">
+                    <h2 class="font-bold text-5xl mb-4">Rangpur</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime optio quas sed consequuntur
+                        ratione iure!</p>
+                </a>
+                <a class="card p-4 mb-24 md:mb-0" href="">
+                    <img class="w-96 md:w-80 lg:w-96 h-56" src="images/barisal.jpg" alt="">
+                    <h2 class="font-bold text-5xl mb-4">Barishal</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam repellendus dicta eaque optio
+                        deleniti eligendi?</p>
+                </a>
+                <a class="card p-4 mb-24 md:mb-0" href="">
+                    <img class="w-96 md:w-80 lg:w-96 h-56" src="images/Chittagong.jpg" alt="">
+                    <h2 class="font-bold text-5xl mb-4">Chittagong</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, recusandae nulla saepe
+                        numquam soluta perspiciatis.</p>
+                </a>
+                <a class="card p-4 mb-24 md:mb-0" href="">
+                    <img class="w-96 md:w-80 lg:w-96 h-56" src="images/Sylhet.jpg" alt="">
+                    <h2 class="font-bold text-5xl mb-4">Sylhet</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores, enim asperiores voluptatibus
+                        recusandae ad non.</p>
+                </a>
+                <a class="card p-4 mb-24 md:mb-0" href="">
+                    <img class="w-96 md:w-80 lg:w-96 h-56" src="images/Khulna.jpg" alt="">
+                    <h2 class="font-bold text-5xl mb-4">khulna</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus officiis at, qui itaque illo
+                        eius.</p>
+                </a>
+                <a class="card p-4 mb-24 md:mb-0" href="">
+                    <img class="w-96 md:w-80 lg:w-96 h-56" src="images/Rajshahi.jpg" alt="">
+                    <h2 class="font-bold text-5xl mb-4">Rajshahi</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit minima hic aspernatur
+                        adipisci commodi exercitationem.</p>
+                </a>
+                <a class="card p-4 mb-24 md:mb-0" href="">
+                    <img class="w-96 md:w-80 lg:w-96 h-56" src="images/Mymensingh.jpg" alt="">
+                    <h2 class="font-bold text-5xl mb-4">Mymensingh</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore commodi magni consectetur
+                        voluptate, eius nobis.</p>
+                </a>
+
+            </div>
+        </div>
+
+
+
+
+        <section class="laptop  pb-">
+            <div id="carouselExampleAutoplaying" class="laptop   carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner  ">
+
+
+                    <div class="carousel-item active ">
+
+                        <div class="flex justify-center gap-36 p-12  ">
+
+                            <a class="card mb-10 md:mb-0 p-4 " href="dhaka.html">
+                                <img class="w-96 md:w-80 lg:w-96 h-56" src="images/dhaka (2).jpg" alt="">
+                                <h2 class="font-bold text-5xl mb-4">Dhaka</h2>
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis, maxime quos
+                                    delectus quia
+                                    iste reprehenderit!</p>
+                            </a>
+
+                            <a class="card p-4 mb-10 md:mb-0" href="">
+                                <img class="w-96 md:w-80 lg:w-96 h-56" src="images/ranpur.jpg" alt="">
+                                <h2 class="font-bold text-5xl mb-4">Rangpur</h2>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime optio quas sed
+                                    consequuntur
+                                    ratione iure!</p>
+                            </a>
+                        </div>
+
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="flex justify-center  gap-36 p-12">
+                            <a class="card p-4 mb-10 md:mb-0" href="">
+                                <img class="w-96 md:w-80 lg:w-96 h-56" src="images/barisal.jpg" alt="">
+                                <h2 class="font-bold text-5xl mb-4">Barishal</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam repellendus dicta
+                                    eaque optio
+                                    deleniti eligendi?</p>
+                            </a>
+
+                            <a class="card p-4 mb-10 md:mb-0" href="">
+                                <img class="w-96 md:w-80 lg:w-96 h-56" src="images/Chittagong.jpg" alt="">
+                                <h2 class="font-bold text-5xl mb-4">Chittagong</h2>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, recusandae
+                                    nulla saepe
+                                    numquam soluta perspiciatis.</p>
+                            </a>
+
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="flex justify-center  gap-36 p-12">
+                            <a class="card p-4 mb-10 md:mb-0" href="">
+                                <img class="w-96 md:w-80 lg:w-96 h-56" src="images/Sylhet.jpg" alt="">
+                                <h2 class="font-bold text-5xl mb-4">Sylhet</h2>
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores, enim asperiores
+                                    voluptatibus
+                                    recusandae ad non.</p>
+                            </a>
+
+                            <a class="card p-4 mb-10 md:mb-0" href="">
+                                <img class="w-96 md:w-80 lg:w-96 h-56" src="images/Khulna.jpg" alt="">
+                                <h2 class="font-bold text-5xl mb-4">khulna</h2>
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus officiis at, qui
+                                    itaque illo
+                                    eius.</p>
+                            </a>
+
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="flex justify-center  gap-36 p-12">
+                            <a class="card p-4 mb-10 md:mb-0" href="">
+                                <img class="w-96 md:w-80 lg:w-96 h-56" src="images/Rajshahi.jpg" alt="">
+                                <h2 class="font-bold text-5xl mb-4">Rajshahi</h2>
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit minima hic
+                                    aspernatur
+                                    adipisci commodi exercitationem.</p>
+                            </a>
+
+                            <a class="card p-4 mb-10 md:mb-0" href="">
+                                <img class="w-96 md:w-80 lg:w-96 h-56" src="images/Mymensingh.jpg" alt="">
+                                <h2 class="font-bold text-5xl mb-4">Mymensingh</h2>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore commodi magni
+                                    consectetur
+                                    voluptate, eius nobis.</p>
+                            </a>
+
+                        </div>
+                    </div>
+
+
+
+                </div>
+                <button class="carousel-control-prev  " type="button" data-bs-target="#carouselExampleAutoplaying"
+                    data-bs-slide="prev">
+                    <i class="fa-solid fa-chevron-left text-white text-3xl"></i>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+                    data-bs-slide="next">
+                    <i class="fa-solid fa-chevron-right  text-white text-3xl"></i>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </section>
+
+    </section>
+
+    </main>
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
