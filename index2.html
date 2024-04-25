@@ -81,7 +81,7 @@
             background-size: cover;
             background-position: center;
 
-            height: 100vh;
+            height: 90vh;
         }
 
         .footer-bg {
@@ -97,13 +97,16 @@
 
         @media screen and (max-width:1023px) {
 
+            .bal{
+                height: 110vh;
+            }
 
             .hide {
                 display: none;
             }
 
-            .mobile {
-                display: block;
+            .mobile{
+                display: none;
             }
 
             .laptop {
@@ -111,7 +114,20 @@
 
             }
 
+        }
 
+        @media screen and (max-width:460px) {
+            .bal{
+                height: 550vh;
+            }
+
+            .card{
+                width: 100%;
+            }
+
+            .laptop{
+                display: none;
+            }
         }
     </style>
 
@@ -248,7 +264,7 @@
 
 
 
-        <section class="laptop  pb-">
+        <section class="laptop  ">
             <div id="carouselExampleAutoplaying" class="laptop   carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner  ">
 
@@ -342,12 +358,12 @@
                 </div>
                 <button class="carousel-control-prev  " type="button" data-bs-target="#carouselExampleAutoplaying"
                     data-bs-slide="prev">
-                    <i class="fa-solid fa-chevron-left text-white text-3xl"></i>
+                    <i class="fa-solid fa-chevron-left text-gray-950 text-3xl"></i>
                     <span class="visually-hidden">Previous</span>
                 </button>
                 <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
                     data-bs-slide="next">
-                    <i class="fa-solid fa-chevron-right  text-white text-3xl"></i>
+                    <i class="fa-solid fa-chevron-right  text-gray-950 text-3xl"></i>
                     <span class="visually-hidden">Next</span>
                 </button>
             </div>
@@ -363,7 +379,7 @@
             <h2 class="pt-3 text-2xl text-white"><span class="text-lime-600">i</span>Guide</h2>
             <p class="text-[#7d95a8]">Copyright © 2024 iGuide</p>
 
-            <div class="flex justify-center text-white gap-5 md:gap-10">
+            <div class="flex justify-center text-white gap-1     md:gap-10">
                 <a href="">Legal Stuff</a>
                 <a href="">Privacy Policy</a>
                 <a href="">Security</a>
