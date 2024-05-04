@@ -1,0 +1,975 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iGuide.com</title>
+    <link rel="stylesheet" href="tailwind.config.js">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="bangladesh/search-bar.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/brands.min.css">
+    <script src="https://kit.fontawesome.com/7c8e995abe.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="bangladesh/value.css">
+    <link rel="stylesheet" href="bangladesh/iGuide.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/7c8e995abe.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/7c8e995abe.js" crossorigin="anonymous"></script>
+
+
+    <style>
+        nav {
+            background-color: rgba(255, 255, 255, 0.192);
+
+        }
+
+        .a-1:hover {
+
+            color: #505050;
+        }
+
+        img {
+            border-top-left-radius: 12px;
+            border-bottom-left-radius: 12px;
+        }
+    </style>
+
+
+
+</head>
+
+<body class="bg-[#F2F2F2]">
+    <nav class="">
+        <div class="h-16 flex justify-between items-center">
+
+            <div class=" ml-3 my-3 flex"><button class="button" data-text="Awesome">
+                    <span class="actual-text flex">&nbsp;<span class="text-[#005009]">i</span>
+                        <div class="text-black">Guide</div>&nbsp;
+                    </span>
+                    <span aria-hidden="true" class="hover-text">&nbsp;iGuide&nbsp;</span>
+                </button>
+            </div>
+
+
+            <form class="form m-3 ">
+
+                <label class="flex items-center" for="search">
+                    <input class="input" type="text" required="" placeholder="Location " id="search">
+                    <div class="fancy-bg"></div>
+                    <div class="search">
+                        <svg viewBox="0 0 24 24" aria-hidden="true"
+                            class="r-14j79pv r-4qtqp9 r-yyyyoo r-1xvli5t r-dnmrzs r-4wgw6l r-f727ji r-bnwqim r-1plcrui r-lrvibr">
+                            <g>
+                                <path
+                                    d="M21.53 20.47l-3.66-3.66C19.195 15.24 20 13.214 20 11c0-4.97-4.03-9-9-9s-9 4.03-9 9 4.03 9 9 9c2.215 0 4.24-.804 5.808-2.13l3.66 3.66c.147.146.34.22.53.22s.385-.073.53-.22c.295-.293.295-.767.002-1.06zM3.5 11c0-4.135 3.365-7.5 7.5-7.5s7.5 3.365 7.5 7.5-3.365 7.5-7.5 7.5-7.5-3.365-7.5-7.5z">
+                                </path>
+                            </g>
+                        </svg>
+                    </div>
+                    <button class="close-btn" type="reset">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd"
+                                d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                                clip-rule="evenodd"></path>
+                        </svg>
+                    </button>
+                </label>
+
+            </form>
+
+
+            <div class="font-bold mr-2 flex items-center">
+
+                <span class="hide">
+                    <a class="m-3 a-1" href="index.html">Home</a>
+                    <a class="m-3 a-1" href="">News</a>
+                    <a class="m-3 a-1" href="">Contact</a>
+                </span>
+                <i class="a-1 m-3 fa-solid fa-user"></i>
+
+                <i class="a-1 m-3 fa-solid fa-bars"></i>
+
+
+
+
+            </div>
+
+        </div>
+
+    </nav>
+
+    <div class="flex justify-center">
+        <h1 class="text-4xl font-semibold my-5 w-4/5">Top Restaurants in Rangpur City</h1>
+    </div>
+
+    <section class="w-full flex justify-center items-center">
+        <span class="w-4/5">
+
+            <div class="bg-white  flex rounded-xl items-center m-2  ">
+
+                <div class="w-96 h-72 ">
+                    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+
+
+                            <div class="carousel-item active">
+
+                                <div class=" flex  justify-center">
+                                    <img class="w-96 h-72 " src="rangpur-restaurants/rest-1.jpg" alt="">
+                                </div>
+                            </div>
+
+                            <div class="carousel-item">
+                                <div class="">
+                                    <img class="w-96 h-72" src="rangpur-restaurants/r1-1.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="">
+                                    <img class="w-96 h-72" src="rangpur-restaurants/r1-2.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="">
+                                    <img class="w-96 h-72" src="rangpur-restaurants/r1-3.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="">
+                                    <img class="w-96 h-72" src="rangpur-restaurants/r1-4.jpg" alt="">
+                                </div>
+                            </div>
+
+
+                        </div>
+                        <button class="carousel-control-prev  " type="button"
+                            data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+                            <i class="fa-solid fa-chevron-left text-gray-950 text-3xl"></i>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+                            data-bs-slide="next">
+                            <i class="fa-solid fa-chevron-right text-gray-950 text-3xl"></i>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+
+
+                <div class="flex justify-center h-full w-full">
+
+                    <div class=" w-11/12  ">
+                        <div>
+                            <a href="https://www.tripadvisor.com/Restaurant_Review-g293936-d19449531-Reviews-Elements_Global_Dining_at_InterContinental_Dhaka-Dhaka_City_Dhaka_Division.html"
+                                class="font-semibold text-3xl hover:text-gray-600 hover:underline ">Chalk & Beans</a>
+
+                            <div class="flex gap-6">
+                                <span>
+                                    <i class="fa-solid fa-star fa-fw"></i>
+                                    <i class="fa-solid fa-star fa-fw"></i>
+                                    <i class="fa-solid fa-star fa-fw"></i>
+                                    <i class="fa-solid fa-star fa-fw"></i>
+                                    <i class="fa-solid fa-star fa-fw"></i>
+                                </span>
+                                <p class="underline">1,152 reviews</p>
+
+                                <p> Open now</p>
+                            </div>
+
+                            <span class="flex gap-6">
+                                <h3>Bars & Pubs, Cafe</h3>
+                                <p>$$$$</p>
+                            </span>
+
+                            <hr class="my-8">
+
+
+                            <h2 class="mb-3">"• classically delicious coffee • unique and flavorful specialty drinks • comfy..."</h2>
+                            <h2>"Place"</h2>
+
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </span>
+    </section>
+
+    <section class="w-full flex justify-center items-center">
+        <span class="w-4/5">
+
+            <div class="bg-white  flex rounded-xl items-center m-2  ">
+
+                <div class="w-96 h-72 ">
+                    <div id="1st" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+
+
+                            <div class="carousel-item active">
+
+                                <div class=" flex  justify-center">
+                                    <img class="w-96 h-72 " src="dhaka-restaurants/rest2.jpg" alt="">
+                                </div>
+                            </div>
+
+                            <div class="carousel-item">
+                                <div class="">
+                                    <img class="w-96 h-72" src="dhaka-restaurants/r2-4.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="">
+                                    <img class="w-96 h-72" src="dhaka-restaurants/r2-2.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="">
+                                    <img class="w-96 h-72" src="dhaka-restaurants/r2-3.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="">
+                                    <img class="w-96 h-72" src="dhaka-restaurants/r2-1.jpg" alt="">
+                                </div>
+                            </div>
+
+
+                        </div>
+                        <button class="carousel-control-prev  " type="button" data-bs-target="#1st"
+                            data-bs-slide="prev">
+                            <i class="fa-solid fa-chevron-left text-gray-950 text-3xl"></i>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#1st" data-bs-slide="next">
+                            <i class="fa-solid fa-chevron-right text-gray-950 text-3xl"></i>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+
+
+                <div class="flex justify-center h-full w-full">
+
+                    <div class=" w-11/12  ">
+                        <div>
+                            <a target="_blank"
+                                href="https://www.tripadvisor.com/Restaurant_Review-g293936-d3195821-Reviews-Seasonal_Tastes-Dhaka_City_Dhaka_Division.html"
+                                class="font-semibold text-3xl hover:text-gray-600 hover:underline ">Seasonal Tastes</a>
+
+                            <div class="flex gap-6">
+                                <span>
+                                    <i class="fa-solid fa-star fa-fw"></i>
+                                    <i class="fa-solid fa-star fa-fw"></i>
+                                    <i class="fa-solid fa-star fa-fw"></i>
+                                    <i class="fa-solid fa-star fa-fw"></i>
+                                    <i class="fa-solid fa-star fa-fw"></i>
+                                </span>
+                                <p class="underline">1,240 reviews</p>
+
+                                <p> Open now</p>
+                            </div>
+
+                            <span class="flex gap-6">
+                                <h3>American, Asian
+                                </h3>
+                                <p>$$$$</p>
+                            </span>
+
+                            <hr class="my-8">
+
+
+                            <h2 class="mb-3">"Love the Arabic dishes, the adana kebab and bbq chicken."</h2>
+                            <h2>"I love tast and i will ba Again in tast..."</h2>
+
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </span>
+    </section>
+
+    <section class="w-full flex justify-center items-center">
+        <span class="w-4/5">
+
+            <div class="bg-white  flex rounded-xl items-center m-2  ">
+
+                <div class="w-96 h-72 ">
+                    <div id="2nd" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+
+
+                            <div class="carousel-item active">
+
+                                <div class=" flex  justify-center">
+                                    <img class="w-96 h-72 " src="dhaka-restaurants/rest3.jpg" alt="">
+                                </div>
+                            </div>
+
+                            <div class="carousel-item">
+                                <div class="">
+                                    <img class="w-96 h-72" src="dhaka-restaurants/r3-1.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="">
+                                    <img class="w-96 h-72" src="dhaka-restaurants/r3-2.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="">
+                                    <img class="w-96 h-72" src="dhaka-restaurants/r3-4.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="">
+                                    <img class="w-96 h-72" src="dhaka-restaurants/r3-3.jpg" alt="">
+                                </div>
+                            </div>
+
+
+                        </div>
+                        <button class="carousel-control-prev  " type="button" data-bs-target="#2nd"
+                            data-bs-slide="prev">
+                            <i class="fa-solid fa-chevron-left text-gray-950 text-3xl"></i>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#2nd" data-bs-slide="next">
+                            <i class="fa-solid fa-chevron-right text-gray-950 text-3xl"></i>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+
+
+                <div class="flex justify-center h-full w-full">
+
+                    <div class=" w-11/12  ">
+                        <div>
+                            <a target="_blank" href=""
+                                class="font-semibold text-3xl hover:text-gray-600 hover:underline ">Aqua Deck at
+                                InterContinental Dhaka</a>
+
+                            <div class="flex gap-6">
+                                <span>
+                                    <i class="fa-solid fa-star fa-fw"></i>
+                                    <i class="fa-solid fa-star fa-fw"></i>
+                                    <i class="fa-solid fa-star fa-fw"></i>
+                                    <i class="fa-solid fa-star fa-fw"></i>
+                                    <i class="fa-solid fa-star fa-fw"></i>
+                                </span>
+                                <p class="underline">1490 reviews</p>
+
+                                <p> Open now</p>
+                            </div>
+
+                            <span class="flex gap-6">
+                                <h3>Bars & Pubs, Bar
+
+                                </h3>
+                                <p>$$$$</p>
+                            </span>
+
+                            <hr class="my-8">
+
+
+                            <h2 class="mb-3">"Excellent pool side restaurant in Dhaka"</h2>
+                            <h2>"Had lunch today at the aqua deck. The..."</h2>
+
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </span>
+    </section>
+
+    <section class="w-full flex justify-center items-center">
+        <span class="w-4/5">
+
+            <div class="bg-white  flex rounded-xl items-center m-2  ">
+
+                <div class="w-96 h-72 ">
+                    <div id="3rd" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+
+
+                            <div class="carousel-item active">
+
+                                <div class=" flex  justify-center">
+                                    <img class="w-96 h-72 " src="dhaka-restaurants/rest4.jpg" alt="">
+                                </div>
+                            </div>
+
+                            <div class="carousel-item">
+                                <div class="">
+                                    <img class="w-96 h-72" src="dhaka-restaurants/r4-1.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="">
+                                    <img class="w-96 h-72" src="dhaka-restaurants/r4-2.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="">
+                                    <img class="w-96 h-72" src="dhaka-restaurants/r4-3.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="">
+                                    <img class="w-96 h-72" src="dhaka-restaurants/r4-4.jpg" alt="">
+                                </div>
+                            </div>
+
+
+                        </div>
+                        <button class="carousel-control-prev  " type="button" data-bs-target="#3rd"
+                            data-bs-slide="prev">
+                            <i class="fa-solid fa-chevron-left text-gray-950 text-3xl"></i>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#3rd" data-bs-slide="next">
+                            <i class="fa-solid fa-chevron-right text-gray-950 text-3xl"></i>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+
+
+                <div class="flex justify-center h-full w-full">
+
+                    <div class=" w-11/12  ">
+                        <div>
+                            <a target="_blank" href=""
+                                class="font-semibold text-3xl hover:text-gray-600 hover:underline ">The Garden Kitchen
+                                at Sheraton Dhaka</a>
+
+                            <div class="flex gap-6">
+                                <span>
+                                    <i class="fa-solid fa-star fa-fw"></i>
+                                    <i class="fa-solid fa-star fa-fw"></i>
+                                    <i class="fa-solid fa-star fa-fw"></i>
+                                    <i class="fa-solid fa-star fa-fw"></i>
+                                    <i class="fa-solid fa-star fa-fw"></i>
+                                </span>
+                                <p class="underline">1346 reviews</p>
+
+                                <p> Open now</p>
+                            </div>
+
+                            <span class="flex gap-6">
+                                <h3>Italian, Indian
+
+                                </h3>
+                                <p>$$$$</p>
+                            </span>
+
+                            <hr class="my-8">
+
+
+                            <h2 class="mb-3">"Family dinner at This Restaurant"</h2>
+                            <h2>"Best experience"</h2>
+
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </span>
+    </section>
+
+    <section class="w-full flex justify-center items-center">
+        <span class="w-4/5">
+
+            <div class="bg-white  flex rounded-xl items-center m-2  ">
+
+                <div class="w-96 h-72 ">
+                    <div id="4th" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+
+
+                            <div class="carousel-item active">
+
+                                <div class=" flex  justify-center">
+                                    <img class="w-96 h-72 " src="dhaka-restaurants/rest5.jpg" alt="">
+                                </div>
+                            </div>
+
+                            <div class="carousel-item">
+                                <div class="">
+                                    <img class="w-96 h-72" src="dhaka-restaurants/r5-1.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="">
+                                    <img class="w-96 h-72" src="dhaka-restaurants/r5-2.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="">
+                                    <img class="w-96 h-72" src="dhaka-restaurants/r5-3.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="">
+                                    <img class="w-96 h-72" src="dhaka-restaurants/r5-4.jpg" alt="">
+                                </div>
+                            </div>
+
+
+                        </div>
+                        <button class="carousel-control-prev  " type="button" data-bs-target="#4th"
+                            data-bs-slide="prev">
+                            <i class="fa-solid fa-chevron-left text-gray-950 text-3xl"></i>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#4th" data-bs-slide="next">
+                            <i class="fa-solid fa-chevron-right text-gray-950 text-3xl"></i>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+
+
+                <div class="flex justify-center h-full w-full">
+
+                    <div class=" w-11/12  ">
+                        <div>
+                            <a target="_blank" href=""
+                                class="font-semibold text-3xl hover:text-gray-600 hover:underline ">Olea Turkish
+                                Restaurant at Le Méridien Dhaka</a>
+
+                            <div class="flex gap-6">
+                                <span>
+                                    <i class="fa-solid fa-star fa-fw"></i>
+                                    <i class="fa-solid fa-star fa-fw"></i>
+                                    <i class="fa-solid fa-star fa-fw"></i>
+                                    <i class="fa-solid fa-star fa-fw"></i>
+                                    <i class="fa-solid fa-star fa-fw"></i>
+                                </span>
+                                <p class="underline">1091 reviews</p>
+
+                                <p> Open now</p>
+                            </div>
+
+                            <span class="flex gap-6">
+                                <h3>Asian, Turkish
+
+                                </h3>
+                                <p>$$$$</p>
+                            </span>
+
+                            <hr class="my-8">
+
+
+                            <h2 class="mb-3">"The Food and service was just awesome. Staff service is so warming.crore
+                                of..."</h2>
+                            <h2>"Amazing service at pool side area"</h2>
+
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </span>
+    </section>
+
+    <section class="w-full flex justify-center items-center">
+        <span class="w-4/5">
+
+            <div class="bg-white  flex rounded-xl items-center m-2  ">
+
+                <div class="w-96 h-72 ">
+                    <div id="5th" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+
+
+                            <div class="carousel-item active">
+
+                                <div class=" flex  justify-center">
+                                    <img class="w-96 h-72 " src="dhaka-restaurants/rest6.jpg" alt="">
+                                </div>
+                            </div>
+
+                            <div class="carousel-item">
+                                <div class="">
+                                    <img class="w-96 h-72" src="dhaka-restaurants/r6-1.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="">
+                                    <img class="w-96 h-72" src="dhaka-restaurants/r6-2.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="">
+                                    <img class="w-96 h-72" src="dhaka-restaurants/r6-3.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="">
+                                    <img class="w-96 h-72" src="dhaka-restaurants/r6-4.jpg" alt="">
+                                </div>
+                            </div>
+
+
+                        </div>
+                        <button class="carousel-control-prev  " type="button" data-bs-target="#5th"
+                            data-bs-slide="prev">
+                            <i class="fa-solid fa-chevron-left text-gray-950 text-3xl"></i>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#5th" data-bs-slide="next">
+                            <i class="fa-solid fa-chevron-right text-gray-950 text-3xl"></i>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+
+
+                <div class="flex justify-center h-full w-full">
+
+                    <div class=" w-11/12  ">
+                        <div>
+                            <a target="_blank" href=""
+                                class="font-semibold text-3xl hover:text-gray-600 hover:underline "> Le Méridien Dhaka</a>
+
+                            <div class="flex gap-6">
+                                <span>
+                                    <i class="fa-solid fa-star fa-fw"></i>
+                                    <i class="fa-solid fa-star fa-fw"></i>
+                                    <i class="fa-solid fa-star fa-fw"></i>
+                                    <i class="fa-solid fa-star fa-fw"></i>
+                                    <i class="fa-solid fa-star fa-fw"></i>
+                                </span>
+                                <p class="underline">2098 reviews</p>
+
+                                <p> Open now</p>
+                            </div>
+
+                            <span class="flex gap-6">
+                                <h3>International
+
+                                </h3>
+                                <p>$$$$</p>
+                            </span>
+
+                            <hr class="my-8">
+
+
+                            <h2 class="mb-3">"We had an amazing breakfast here and Anik prepared us the best ice cream crepes."</h2>
+                            <h2>"With travel in our new normal world we..."</h2>
+
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </span>
+    </section>
+
+    <section class="w-full flex justify-center items-center">
+        <span class="w-4/5">
+
+            <div class="bg-white  flex rounded-xl items-center m-2  ">
+
+                <div class="w-96 h-72 ">
+                    <div id="6th" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+
+
+                            <div class="carousel-item active">
+
+                                <div class=" flex  justify-center">
+                                    <img class="w-96 h-72 " src="dhaka-restaurants/rest7.jpg" alt="">
+                                </div>
+                            </div>
+
+                            <div class="carousel-item">
+                                <div class="">
+                                    <img class="w-96 h-72" src="dhaka-restaurants/r7-1.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="">
+                                    <img class="w-96 h-72" src="dhaka-restaurants/r7-2.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="">
+                                    <img class="w-96 h-72" src="dhaka-restaurants/r7-3.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="">
+                                    <img class="w-96 h-72" src="dhaka-restaurants/r7-4.jpg" alt="">
+                                </div>
+                            </div>
+
+
+                        </div>
+                        <button class="carousel-control-prev  " type="button" data-bs-target="#6th"
+                            data-bs-slide="prev">
+                            <i class="fa-solid fa-chevron-left text-gray-950 text-3xl"></i>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#6th" data-bs-slide="next">
+                            <i class="fa-solid fa-chevron-right text-gray-950 text-3xl"></i>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+
+
+                <div class="flex justify-center h-full w-full">
+
+                    <div class=" w-11/12  ">
+                        <div>
+                            <a target="_blank" href=""
+                                class="font-semibold text-3xl hover:text-gray-600 hover:underline ">Risotto by Sarina</a>
+
+                            <div class="flex gap-6">
+                                <span>
+                                    <i class="fa-solid fa-star fa-fw"></i>
+                                    <i class="fa-solid fa-star fa-fw"></i>
+                                    <i class="fa-solid fa-star fa-fw"></i>
+                                    <i class="fa-solid fa-star fa-fw"></i>
+                                    <i class="fa-solid fa-star fa-fw"></i>
+                                </span>
+                                <p class="underline">929 reviews</p>
+
+                                <p class="text-red-500"> Closed Now</p>
+                            </div>
+
+                            <span class="flex gap-6">
+                                <h3>Italian, European
+
+
+                                </h3>
+                                <p>$$$$</p>
+                            </span>
+
+                            <hr class="my-8">
+
+
+                            <h2 class="mb-3">"... was so good,Fish ,dessert and salad were very good,Staff Razia ,Jihad and..."</h2>
+                            <h2>"Best italian restaurant."</h2>
+
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </span>
+    </section>
+
+    <section class="w-full flex justify-center items-center">
+        <span class="w-4/5">
+
+            <div class="bg-white  flex rounded-xl items-center m-2  ">
+
+                <div class="w-96 h-72 ">
+                    <div id="8th" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+
+
+                            <div class="carousel-item active">
+
+                                <div class=" flex  justify-center">
+                                    <img class="w-96 h-72 " src="dhaka-restaurants/rest8.jpg" alt="">
+                                </div>
+                            </div>
+
+                            <div class="carousel-item">
+                                <div class="">
+                                    <img class="w-96 h-72" src="dhaka-restaurants/r8-1.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="">
+                                    <img class="w-96 h-72" src="dhaka-restaurants/r8-2.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="">
+                                    <img class="w-96 h-72" src="dhaka-restaurants/r8-3.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="">
+                                    <img class="w-96 h-72" src="dhaka-restaurants/r8-4.jpg" alt="">
+                                </div>
+                            </div>
+
+
+                        </div>
+                        <button class="carousel-control-prev  " type="button" data-bs-target="#8th"
+                            data-bs-slide="prev">
+                            <i class="fa-solid fa-chevron-left text-gray-950 text-3xl"></i>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#8th" data-bs-slide="next">
+                            <i class="fa-solid fa-chevron-right text-gray-950 text-3xl"></i>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+
+
+                <div class="flex justify-center h-full w-full">
+
+                    <div class=" w-11/12  ">
+                        <div>
+                            <a target="_blank" href=""
+                                class="font-semibold text-3xl hover:text-gray-600 hover:underline ">Summerfields by Sarina</a>
+
+                            <div class="flex gap-6">
+                                <span>
+                                    <i class="fa-solid fa-star fa-fw"></i>
+                                    <i class="fa-solid fa-star fa-fw"></i>
+                                    <i class="fa-solid fa-star fa-fw"></i>
+                                    <i class="fa-solid fa-star fa-fw"></i>
+                                    <i class="fa-solid fa-star fa-fw"></i>
+                                </span>
+                                <p class="underline">1340 reviews</p>
+
+                                <p> Open now</p>
+                            </div>
+
+                            <span class="flex gap-6">
+                                <h3>International, Asian
+
+
+                                </h3>
+                                <p>$$$$</p>
+                            </span>
+
+                            <hr class="my-8">
+
+
+                            <h2 class="mb-3">"Street food fastival"</h2>
+                            <h2>"Excellent mandi biryani"</h2>
+
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </span>
+    </section>
+    
+    <section class="w-full flex justify-center items-center">
+        <span class="w-4/5">
+
+            <div class="bg-white  flex rounded-xl items-center m-2  ">
+
+                <div class="w-96 h-72 ">
+                    <div id="9th" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+
+
+                            <div class="carousel-item active">
+
+                                <div class=" flex  justify-center">
+                                    <img class="w-96 h-72 " src="dhaka-restaurants/rest9.jpg" alt="">
+                                </div>
+                            </div>
+
+                            <div class="carousel-item">
+                                <div class="">
+                                    <img class="w-96 h-72" src="dhaka-restaurants/r9-1.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="">
+                                    <img class="w-96 h-72" src="dhaka-restaurants/r9-2.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="">
+                                    <img class="w-96 h-72" src="dhaka-restaurants/r9-3.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="">
+                                    <img class="w-96 h-72" src="dhaka-restaurants/r9-4.jpg" alt="">
+                                </div>
+                            </div>
+
+
+                        </div>
+                        <button class="carousel-control-prev  " type="button" data-bs-target="#9th"
+                            data-bs-slide="prev">
+                            <i class="fa-solid fa-chevron-left text-gray-950 text-3xl"></i>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#9th" data-bs-slide="next">
+                            <i class="fa-solid fa-chevron-right text-gray-950 text-3xl"></i>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+
+
+                <div class="flex justify-center h-full w-full">
+
+                    <div class=" w-11/12  ">
+                        <div>
+                            <a target="_blank" href=""
+                                class="font-semibold text-3xl hover:text-gray-600 hover:underline "> Bahar</a>
+
+                            <div class="flex gap-6">
+                                <span>
+                                    <i class="fa-solid fa-star fa-fw"></i>
+                                    <i class="fa-solid fa-star fa-fw"></i>
+                                    <i class="fa-solid fa-star fa-fw"></i>
+                                    <i class="fa-solid fa-star fa-fw"></i>
+                                    <i class="fa-solid fa-star fa-fw"></i>
+                                </span>
+                                <p class="underline">875 reviews</p>
+
+                                <p> Open now</p>
+                            </div>
+
+                            <span class="flex gap-6">
+                                <h3>International, Asian
+
+
+                                </h3>
+                                <p>$$$$</p>
+                            </span>
+
+                            <hr class="my-8">
+
+
+                            <h2 class="mb-3">"Must try the Mongolian section, eat to your hearts content. If you like the..."</h2>
+                            <h2>"Best restaurant in town"</h2>
+
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </span>
+    </section>
+
+</body>
+
+</html>
