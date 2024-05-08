@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="bangladesh/search-bar.css">
     <script src="https://kit.fontawesome.com/7c8e995abe.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="bangladesh/iGuide.css">
+    <link rel="stylesheet" href="dropdown.css">
+
 
     <!-- all links-->
 
@@ -71,6 +73,9 @@
 
             height: 36px;
         }
+
+
+
 
         @media screen and (max-width:450px) {
 
@@ -135,12 +140,27 @@
                         <a class="m-3 a-1" href="">News</a>
                         <a class="m-3 a-1" href="">Contact</a>
                     </span>
-                    
-                    <a href="login.html">
-                        <i class="a-1 m-3 fa-solid fa-user"></i>
-                    </a>
 
-                    <i class="a-1 m-3 fa-solid fa-bars"></i>
+                    <div class="dropdown flex justify-between items-center">
+                        <button><i class="a-1 m-3 fa-solid fa-user"></i></button>
+                        <div class="content -mb-32 -ml-7">
+                            <a href="login.html">Log in</a>
+                            <a href="">Sing up</a>
+                        </div>
+                    </div>
+                    <div class="dropdown flex justify-between items-center">
+                        <button><i class="a-1 m-3 fa-solid fa-bars"></i></button>
+                        <div class="content -mb-64 -ml-12">
+                            <a href="">Home</a>
+                            <a href="">News</a>
+                            <a href="">Contact</a>
+                            <a href="login.html">Log in</a>
+                            <a href="">Sing up</a>
+                        </div>
+                    </div>
+
+
+
 
 
 
