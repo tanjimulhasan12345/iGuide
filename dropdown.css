@@ -10,7 +10,7 @@
     text-align: center;
     display: none;
     position: absolute;
-    background-color:white;
+    background-color: rgba(255, 255, 255, 0.192);
     min-width: 100px;
     box-shadow: 2px 2px 5px black;
     border-radius: 20px;
